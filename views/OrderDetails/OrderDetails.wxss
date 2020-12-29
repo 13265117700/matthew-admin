@@ -139,6 +139,36 @@
   float: left;
 }
 
+.btn{
+  width: 104px;
+height: 24px;
+font-size: 11px;
+font-family: PingFang SC;
+font-weight: 500;
+color: #191919;
+background: #FFFFFF;
+border: 2px solid #E8E8E8;
+border-radius: 12px;
+text-align: center;
+    line-height: 21px;
+    margin: 20px 135px 10px;
+}
+
+.content{
+  padding:20px 15px 6px 15px;
+   display: flex;
+    font-size: 14px; 
+    color: #191919;
+}
+
+.on{
+  width: 1000px;
+  display: block;
+ text-overflow: clip;
+ overflow: visible;
+ background-color: #1F84E3;
+}
+
 .end{
 width: 750px;
 height: 55px;

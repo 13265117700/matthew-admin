@@ -14,7 +14,7 @@
 <view class="supplement">
  <view>补充说明</view>
  <text>12123</text>
-</view>
+</view> 
 
 <view>
   <view class="btn">

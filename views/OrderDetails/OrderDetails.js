@@ -87,8 +87,14 @@ Page({
     }],
     value1: 0 ,//流程图
     icon:"",
-    show: false,
+    isShow:false
 
+  },
+  open:function(){
+     this.isShow = !this.isShow;
+     console.log(111);
+     console.log(this.isShow);
+  
   },
   
 

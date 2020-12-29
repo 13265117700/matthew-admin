@@ -91,11 +91,11 @@
 
     <view style="padding:14px 15px 6px 15px">
       <view>货运金额:
-        <view style="float:right">￥129980.00</view>
+        <view style="float:right; color:#F0222F;">￥129980.00</view>
       </view>
 
       <view>货运支付状态:
-        <view style="float:right">未支付</view>
+        <view style="float:right; color:#1F84E3;">未支付</view>
       </view>
 
     </view>
@@ -104,18 +104,17 @@
 
   <view class="cargo-owner-information">
 
-    <view style="padding:20px 15px 6px 15px; display: flex; font-size: 14px; color: #191919;">
+    <view class="content">
       <view style="margin-right:11px padding: 20px 135px; color: #191919;">车牌照号:</view>
       <view>粤A65656</view>
     </view>
-
-    <view style="padding: 20px 135px; ">
-      <view>展示完整信息</view>
-
-    </view>
+    <view bindtap="open" class="  {{isShow == true ? 'on' : 'btn'}} ">展示完整信息</view>
 
   </view>
+
+
   <!-- 货物内容 结束 -->
+
 
   <!-- 底部 -->
 
