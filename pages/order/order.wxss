@@ -9,7 +9,7 @@
   margin:10px 0 10px;
   background: #FFFFFF;
   border-radius: 10px;
-  padding: 24px 15px;
+  padding: 19px 15px;
 
 }
 
@@ -55,8 +55,9 @@ margin-bottom: 12px;
 }
 
 .tabs-btnBox{
-  padding:15px 0 0 88px;
-  /* float: right; */
+display: flex;
+justify-content: flex-end;
+padding: 20rpx;
 }
 
 /* 货主结束 */
@@ -65,7 +66,6 @@ margin-bottom: 12px;
 position: absolute;
 width: 80px;
 height: 80px;
-background: #FFFFFF;
 border: 2px dashed #E5E5E5;
 border-radius: 50%;
 font-size: 16px;
@@ -73,18 +73,17 @@ font-family: PingFang SC;
 font-weight: 500;
 color: #BBBBBB;
 right: 21px;
-margin-top: -49px;
+margin-top: -13px;
 
 }
 
 .quang_a{
 width: 60px;
 height: 60px;
-background: #FFFFFF;
 border: 2px dashed #E5E5E5;
 line-height: 57px;
 text-align: center;
-margin:7px 8px;
+margin:8px 8px;
 border-radius: 50%;
 transform: rotate(-45deg);
 

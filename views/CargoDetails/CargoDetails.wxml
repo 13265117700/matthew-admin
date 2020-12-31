@@ -1,0 +1,129 @@
+<!--views/CargoDetails/CargoDetails.wxml-->
+
+<!-- 货源-货盘详情（货主查看自己发布的） -->
+
+<view class="NavBar-text">
+  <van-icon name="arrow-left" />
+  <text style="margin:0 228rpx;">货盘详情</text>
+</view>
+
+<view class="image"></view>
+
+<view style="margin:0 30rpx">
+<view class="box box_a">
+ 
+<view wx:for="{{ user }}" wx:key="key" style="display: flex;">
+
+  <!-- 用户头像数据 -->
+  <view class="headImg"></view>
+  <view class="text-box">
+    <view style="display:flex">
+
+   
+    <view style="font-size: 30rpx;color: #434343; margin-right:30rpx">{{item.userName}}</view>
+    <view style="color:{{ item.estyle }};">{{item.state}}</view>
+  </view>
+    <view>成交次数：{{item.frequency}}</view>
+    
+  </view>
+</view>
+</view>
+</view>
+<!-- 用户信息 结束 -->
+
+<!-- 货源信息 开始 -->
+
+<view class="box">
+
+<view class="head-text" style="border-bottom: 1px solid #E6E6E6;">
+  <view class="text-head">货源信息</view>
+  <van-button
+    custom-style="width: 140rpx;height: 58rpx;border: 2rpx solid #E3211F;margin-left:377rpx;font-size: 28rpx;font-weight: bold;color: #E3211F;border-radius: 20px;">
+    关注</van-button>
+
+</view>
+
+<view class="information" wx:for="{{ information }}" wx:key="key">
+  <view class="text-left">{{ item.category}}</view>
+  <view class="text-right">{{ item.text }}</view>
+</view>
+
+
+</view>
+
+
+<!-- 货源信息 结束 -->
+
+
+
+<!-- 更多信息 开始 -->
+<view class="box">
+<view class="head-text">
+  <view class="text-head">
+    更多信息
+  </view>
+
+  <!-- <image src="/images/order/gengduoxx.png" alt=""  style="width:28rpx; height:18rpx;"></image> -->
+
+</view>
+
+<view class="information" wx:for="{{ information_a_a }}" wx:key="key">
+  <view class="text-left_a">{{ item.category}}</view>
+  <view>
+  <view class="text-right">{{ item.text }}</view>  
+  <view class="text-right">{{ item.text1 }}</view> 
+  <view class="text-right">{{ item.text2 }}</view> 
+</view>
+</view>
+</view>
+<!-- 更多信息 结束 -->
+
+<!-- 备注 开始 -->
+<view class="box" style="height:60px">
+<view class="information">
+  <view class="text-left">备注:</view>
+  <view class="text-right_a">12211111111111111111111</view>
+</view>
+
+</view>
+<!-- 备注 结束 -->
+
+
+<!-- 底部按钮 开始 -->
+<!-- 选择船东承运 -->
+<view style=" background:#FFFFFF;">
+<view class="complaint">
+  <image src="/images/order/bj (1).png" style="width:38rpx; height:38rpx; margin:0 29px"></image>
+  <view>修改货源信息</view>
+</view>
+
+ <view class="btn" style="background:#FF7038" >发起聊天</view>
+ <view class="btn" style="background:#FF3C07">选择船东承运</view>
+</view>
+<!-- 底部按钮 结束 -->
+
+<!-- 底部按钮 开始 -->
+<!-- 选择车主承运 -->
+<view style=" background:#FFFFFF;">
+<view class="complaint">
+  <image src="/images/order/bj (1).png" style="width:38rpx; height:38rpx; margin:0 29px"></image>
+  <view>修改货源信息</view>
+</view>
+
+ <view class="btn" style="background:#FF7038" >发起聊天</view>
+ <view class="btn" style="background:#FF3C07">选择船东承运</view>
+</view>
+<!-- 底部按钮 结束 -->
+
+
+<!-- 不同的状态 -->
+<!-- 底部按钮 开始 -->
+<view style=" background:#FFFFFF;">
+<view class="complaint">
+  <image src="/images/order/ts (1).png" style="width:38rpx; height:38rpx; margin:0 29px"></image>
+  <view>投诉</view>
+</view>
+
+ <view class="btn" style="background:#FF3C07; width: 569rpx;" >发起聊天</view>
+</view>
+<!-- 底部按钮 结束 -->

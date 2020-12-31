@@ -1,0 +1,105 @@
+<!--views/DeliveryDate/DeliveryDate.wxml-->
+
+<!-- 货期贷源1 -版本1 -->
+ <!-- 导航头 -->
+<vtu-navbar title="货源货期信息"  bgColor="#F0222F" fontColor="#ffffff" ></vtu-navbar>
+
+<!-- 搜索框 -->
+<view class="searhBox" >
+
+<van-search
+  value="{{ value }}"
+ 
+  placeholder="请输入货名/好友/公司名/社会信用代码"
+  use-action-slot
+  bind:change="onChange"
+  bind:search="onSearch"
+  shape="round"
+>
+  <view slot="action" bind:tap="onClick" style="font-size: 30rpx;font-family: PingFang SC;font-weight: bold;color: #E3211F;margin:0 12px">筛选</view>
+</van-search>
+
+<van-tabs active="{{ active }}" bind:change="onChange">
+  <van-tab wx:for="{{ region }}" wx:key="key" title="{{item.title}}">
+
+    <!-- 第一个模拟渲染数据 -->
+    <view class="box">
+    
+    <view class="box_a">
+              <view
+              class="tabs-time"
+              >装货期 2020-08-12
+              <button class="btn">关注</button>
+            </view>
+              
+              <view
+              class="tabs-place"
+              >
+              <image src="/images/order/c.png" 
+              style="width:15px; height:15px; "
+              ></image>
+              广州黄埔装货港 <image src="/images/order/yunwang.png"
+              style=" width:55px; height:7px;  margin: 0 8px"
+              ></image>珠海大湾区目的港</view>
+              <view
+              class="tabs-goods"
+              >
+              <view
+              class="tabs-type"
+              >玉米</view>
+              <view
+              class="tabs-tonnage"
+              >6800吨</view>
+                
+      
+  
+            </view>
+            </view>
+  
+  
+  
+  </view>
+
+  <!-- 第二个模拟渲染数据 -->
+  <view class="box">
+    
+    <view class="box_a">
+              <view
+              class="tabs-time"
+              >装货期 2020-08-12
+              <button class="btn">关注</button>
+            </view>
+              
+              <view
+              class="tabs-place"
+              >
+              <image src="/images/order/c.png" 
+              style="width:15px; height:15px; "
+              ></image>
+              广州黄埔装货港 <image src="/images/order/yunwang.png"
+              style=" width:55px; height:7px;  margin: 0 8px"
+              ></image>珠海大湾区目的港</view>
+              <view
+              class="tabs-goods"
+              >
+              <view
+              class="tabs-type"
+              >玉米</view>
+              <view
+              class="tabs-tonnage"
+              >6800吨</view>
+                
+      
+  
+            </view>
+            </view>
+  
+  
+  
+  </view>
+
+
+  </van-tab>
+</van-tabs>
+
+</view>

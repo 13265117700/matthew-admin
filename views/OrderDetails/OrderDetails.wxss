@@ -48,13 +48,13 @@
   line-height: 25px;
   margin-top: 6px;
   margin-left: 120px;
- 
+
 }
 
 .steps {
   margin-top: -60px;
   background: #FAEDEE;
-  padding:0 0 0 31px ;
+  padding: 0 0 0 31px;
   margin-left: 0;
 }
 
@@ -62,7 +62,7 @@
 
 /* 货物内容样式 */
 
-.goods {  
+.goods {
   width: 100%;
   background: #FFFFFF;
   border-radius: 20px;
@@ -139,42 +139,50 @@
   float: left;
 }
 
-.btn{
+.btn {
   width: 104px;
-height: 24px;
-font-size: 11px;
-font-family: PingFang SC;
-font-weight: 500;
-color: #191919;
-background: #FFFFFF;
-border: 2px solid #E8E8E8;
-border-radius: 12px;
-text-align: center;
-    line-height: 21px;
-    margin: 20px 135px 10px;
+  height: 24px;
+  font-size: 11px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #191919;
+  background: #FFFFFF;
+  border: 2px solid #E8E8E8;
+  border-radius: 12px;
+  text-align: center;
+  line-height: 21px;
+  margin: 20px 135px 10px;
 }
 
-.content{
-  padding:20px 15px 6px 15px;
-   display: flex;
-    font-size: 14px; 
-    color: #191919;
+.content {
+  padding: 20px 15px 6px 15px;
+  display: flex;
+  font-size: 14px;
+  color: #191919;
 }
 
-.on{
+.on {
   width: 1000px;
   display: block;
- text-overflow: clip;
- overflow: visible;
- background-color: #1F84E3;
+  text-overflow: clip;
+  overflow: visible;
+  background-color: #1F84E3;
+}
+.ebtn{
+width: 192rpx;
+height: 57rpx;
+border: 2px solid #C7C7C7;
+border-radius: 29rpx;
+line-height: 48rpx;
+font-size: 24rpx;
 }
 
-.end{
-width: 750px;
-height: 55px;
-background: #FFFFFF;
-box-shadow: 0px 1px 0px 0px #E5E5E5;
-/* position: fixed;
-z-index: 999; */
+.end {
+
+  background: #FFFFFF;
+  display: flex;
+  justify-content: flex-end;
+  padding: 27rpx;
+  
 
 }

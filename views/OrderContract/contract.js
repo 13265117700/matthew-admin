@@ -16,19 +16,35 @@ Page({
     },{
       id:2,
       contents:"住所:",
-      title:"合肥市包河区庐州大道与贵阳路交口未来塔B座903座"
+      title:"合肥市包河区庐州大道与贵阳路交口未来塔B座903座",
+
+
+    }],
+    informations_a_a_a:[{
+      id:1,
+      contents:"*跟单人姓名：",
+     
+    },{
+      id:2,
+      contents:"*跟单人电话：",
+     
     },{
       id:3,
-      contents:"*跟单人姓名：",
-      title:"内容"
-    },{
-      id:4,
-      contents:"*跟单人电话：",
-      title:"内容"
-    },{
-      id:5,
       contents:"*跟单人邮箱：",
       title:"请输入跟单人邮箱"
+    }],
+    informations_a_a_a_a:[{
+      id:1,
+      contents:"联系人姓名：",
+     
+    },{
+      id:2,
+      contents:"联系人电话：",
+     
+    },{
+      id:3,
+      contents:"联系人邮箱:",
+      title:"请输入联系人邮箱"
     }],
 
     informations_a:[{
@@ -68,19 +84,8 @@ Page({
       id:2,
       contents:"住所：",
       title:" 深圳市南山区蛇口街道沿山路13号胜发 大厦A栋706室"
-    },{
-      id:3,
-      contents:"联系人姓名：",
-      title:"内容内容"
-    },{
-      id:4,
-      contents:"联系电话：",
-      title:"内容内容"
-    },{
-      id:5,
-      contents:"联系人邮箱：",
-      title:"请输入联系人邮箱"
-    }]
+    }],
+
   },
 
   /**

@@ -32,7 +32,7 @@
   <!-- 装货流程  开始-->
   <view class="steps">
 
-    <view  >
+    <view>
  <vtu-steps value="{{value1}}" shape="number" active-color="#099E43">
   <vtu-step title="船到装货港" :icon="icon" ></vtu-step>
   <vtu-step title="装好货"></vtu-step>
@@ -108,7 +108,8 @@
       <view style="margin-right:11px padding: 20px 135px; color: #191919;">车牌照号:</view>
       <view>粤A65656</view>
     </view>
-    <view bindtap="open" class="  {{isShow == true ? 'on' : 'btn'}} ">展示完整信息</view>
+    <view bindtap="open" class=" {{isShow == true ? 'osn' : 'btn'}} ">展示完整信息</view>
+
 
   </view>
 
@@ -120,7 +121,7 @@
 
     <!-- 上传装好货 底部 -->
   <view class="end">
-    <view style="padding:14px 0 0 164px;">
+    <view >
 
       <van-button size="small" round type="default">
         发起聊天
@@ -133,12 +134,57 @@
       <van-button size="small" round type="info" color="linear-gradient(to right, #E01923, #F45919)" >
         上传装好货照片
       </van-button>
+    </view>    
+  </view>
+
+  <view class="end">
+    <!-- <view style="font-size: 12px;font-family: PingFang SC;font-weight: bold;color: #191919;line-height: 58px;" >查看合同</view> -->
+    <view>
+
+      <van-button size="small" round type="default">
+        发起聊天
+      </van-button>
+
+      <van-button size="small" round type="default">
+        订单轨迹
+      </van-button>
+
+      <van-button size="small" round type="info" color="linear-gradient(to right, #E01923, #F45919)" bind:click="showPopup">
+        确认价格
+      </van-button>
     </view>
 
      <!-- 中部弹窗 -->
+     <van-popup show="{{ show }}" bind:close="onClose" custom-style="width: 290px;height: 185px;background: #FFFFFF;border-radius: 10px; padding: 50rpx 52rpx;">
+        <view style="color: #191919;font-size: 34rpx;margin:0px 9px">确认本次订单最终价格吗？</view>
+        <view style="font-size: 24rpx;color: #666666;margin: 2px 55px;">本次订单需支付金额</view>
+        <view style="color: #1F84E3;font-size: 48rpx;margin:15rpx 57rpx;">￥168400.00</view>
+        <view style="display:flex">
+          <button class="ebtn" >不同意</button>
+          <button class="ebtn" style="background: #E81D31;color: #FFFFFF;border: 2px solid #E81D31;" >确定价格</button>
+        </view>
+
+     </van-popup>
     
   </view>
 
+   <!-- 订单详情-待确认 状态 -->
+   <view class="end">
+    <view >
+
+      <van-button size="small" round type="default">
+        发起聊天
+      </van-button>
+
+      <van-button size="small" round type="default">
+        发起申述
+      </van-button>
+
+      <van-button size="small" round type="info" color="linear-gradient(to right, #E01923, #F45919)" >
+        同意承运
+      </van-button>
+    </view>    
+  </view>
 
 
 

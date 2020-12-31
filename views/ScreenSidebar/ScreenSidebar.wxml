@@ -1,0 +1,51 @@
+<!--views/ScreenSidebar/ScreenSidebar.wxml-->
+
+<!-- 找船源-筛选-货源类型 -->
+
+<vtu-navbar title="筛选"  bgColor="#F0222F" fontColor="#ffffff" ></vtu-navbar>
+
+
+
+
+
+  <view class='productNav'>
+  <!-- 左侧 -->
+  <view class='left'>
+    <view class="{{active==0?'selected':'normal'}}" id="0" bindtap='switchNav'>货源类型</view>
+    <view class="{{active==1?'selected':'normal'}}" id="1" bindtap='switchNav'>装货地</view>
+    <view class="{{active==2?'selected':'normal'}}" id="2" bindtap='switchNav'>收货地</view>
+    <view class="{{active==3?'selected':'normal'}}" id="3" bindtap='switchNav'>装货吨数</view>
+  </view>
+  <!-- 右侧 -->
+  <view class='right'>
+    <view class='type'>
+      <!-- current:当前所在滑块的 index -->
+      <!-- vertical:滑动方向是否为纵向 -->
+      <swiper current='{{currentTab}}' vertical='{{true}}'>
+        <!-- catchtouchmove 阻止弹窗后滚动穿透 -->
+        <swiper-item id="0" catchtouchmove="false">
+          <view class="contents">
+          <view>玉米</view>
+          <view>玉米</view>
+          <view>玉米</view>
+          <view>玉米</view>
+        </view>
+        </swiper-item>
+        <swiper-item id="1" catchtouchmove="false">
+          <view>玉米</view>
+          <view>玉米</view>
+          <view>玉米</view>
+          <view>玉米</view>
+        </swiper-item>
+        <swiper-item id="2" catchtouchmove="false">
+          电脑
+        </swiper-item>
+      </swiper> 
+    </view>
+  </view>
+</view>
+
+<view style="margin-top:120px">
+  <view class="btn" style="background: #FF7038;">确认</view>
+  <view class="btn" style="background: #E3211F;">重置</view>
+</view>

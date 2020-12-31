@@ -1,0 +1,69 @@
+/* views/DeliveryDate/DeliveryDate.wxss */
+
+.searhBox{
+  
+}
+
+.box{
+  background: #FFFFFF;
+  border-radius: 10px;
+  margin: 20rpx 29rpx;
+  }
+  .box_a{
+    padding: 30rpx 30rpx;
+  }
+
+  .btn{
+    float: right;
+    width: 140rpx;
+    height: 58rpx;
+    background: #FFFFFF;
+    border: 2px solid #E3211F;
+    border-radius: 29px;
+    margin-top:-15rpx;
+    font-size: 28rpx;
+    font-weight: bold;
+    color: #E3211F;
+    line-height: 53rpx;
+  }
+  
+  .tabs-time {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #333333;
+  border-bottom: 1px solid #E5E5E5;
+  padding-bottom: 29rpx;
+  }
+  
+  .tabs-place {
+    font-size: 14px;
+    color: #191919;
+    margin:17px 0;
+ 
+  }
+  
+  .tabs-goods {
+    display: flex;
+ 
+  }
+  
+  .tabs-type {
+    width: 45px;
+    height: 20px;
+    background: #F06622;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 12px;
+    text-align: center;
+    line-height: 18px;
+    margin-right: 0;
+    margin-right: 30rpx;
+  }
+  
+  .tabs-tonnage {
+    font-size: 30rpx;
+    color: #333333;
+    font-weight: 500;
+  }
+  
+ 

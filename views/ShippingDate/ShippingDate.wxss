@@ -1,0 +1,122 @@
+/* views/ShippingDate/ShippingDate.wxss */
+
+.box {
+  background: #FFFFFF;
+  border-radius: 10px;
+  margin-top: 20rpx;
+  padding: 30rpx 0rpx;
+}
+
+.image {
+  width: 750rpx;
+  height: 340rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.NavBar-text {
+  position: absolute;
+  display: flex;
+  top: 56rpx;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 36rpx;
+  padding-left: 36rpx;
+}
+
+.box_a {
+  width: 100%;
+  margin-top: 224rpx;
+}
+
+
+.headImg {
+  width: 200rpx;
+  height: 200rpx;
+  background: #f9a7a7;
+  margin: -80rpx 43rpx 48rpx 39rpx;
+  border-radius: 10rpx;
+
+}
+
+.text-box {
+  color: #878787;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 48rpx;
+  margin-top: 5px;
+}
+
+.head-text {
+  display: flex;
+  margin-left: 38rpx;
+  padding-bottom: 8px;
+  margin-right: 24px;
+
+}
+
+.text-head {
+  font-size: 30rpx;
+  color: #191919;
+  font-weight: bold;
+}
+
+.information {
+  display: flex;
+  font-size: 30rpx;
+  margin-top: 13rpx;
+  line-height: 58rpx;
+}
+
+.text-left_a {
+  width: 313rpx;
+  font-weight: 500;
+  color: #454545;
+  margin-left: 38rpx;
+}
+
+.text-left {
+  width: 214rpx;
+  font-weight: 500;
+  color: #454545;
+  margin-left: 38rpx;
+}
+
+.text-right {
+
+  font-weight: bold;
+  color: #191919;
+}
+
+.text-right_a {
+  position: absolute;
+  left: 117rpx;
+  color: #191919;
+  word-wrap: break-word;
+  width: 600rpx;
+}
+
+.complaint {
+ 
+  background: #FFFFFF;
+  font-size: 24rpx;
+  font-weight: 500;
+  color: #999999;
+  float: left;
+ padding: 8px 37px;
+ 
+}
+
+.btn{
+  width: 286rpx;
+  height: 100rpx;
+  float: left;
+font-size: 30rpx;
+font-weight: bold;
+color: #FFFFFF;
+line-height: 57px;
+text-align: center;
+
+}

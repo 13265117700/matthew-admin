@@ -1,0 +1,46 @@
+<!--views/SelectGoods/SelectGoods.wxml-->
+<!-- 发起聊天-选择要承运的货物(货主选择) -->
+
+<vtu-navbar title="选择要承运货物"  bgColor="#F0222F" fontColor="#ffffff" ></vtu-navbar>
+
+<van-search value="{{ value }}" placeholder="请输入货物名称" />
+
+ <!-- 主要内容 开始 -->
+<view class="box">
+    
+  <view class="box_a">
+            <view
+            class="tabs-time"
+            >装货期 2020-08-12</view>
+            <view
+            class="tabs-place"
+            >
+            <image src="/images/order/c.png" 
+            style="width:15px; height:15px; "
+            ></image>
+            广州黄埔装货港 <image src="/images/order/yunwang.png"
+            style=" width:55px; height:7px;  margin: 0 8px"
+            ></image>珠海大湾区目的港</view>
+            <view
+            class="tabs-goods"
+            >
+            <view
+            class="tabs-type"
+            >玉米</view>
+            <view
+            class="tabs-tonnage"
+            >6800吨</view>
+              
+          <view class="btns">
+            <button class="btn">确认货物</button>
+            <button class="btn" >发送货源</button>
+           
+          </view>
+
+          </view>
+          </view>
+
+
+
+</view>
+<!-- 主要内容 结束 -->

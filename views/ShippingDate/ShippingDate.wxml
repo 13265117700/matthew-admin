@@ -1,0 +1,192 @@
+<!--views/ShippingDate/ShippingDate.wxml-->
+
+<!-- 船源-船期详情-货主查看 -->
+
+<!-- 自定义导航条  开始-->
+<view class="NavBar-text">
+  <van-icon name="arrow-left" />
+  <text style="margin:0 228rpx;">船期详情</text>
+</view>
+
+<image src="/images/order/cq-bg.png" class="image"></image>
+
+
+<!-- 自定义导航条 结束  -->
+
+
+<!-- 用户信息 开始  -->
+<view class="box box_a">
+
+  <view wx:for="{{ user }}" wx:key="key" style="display: flex;">
+
+    <!-- 用户头像数据 -->
+    <view class="headImg"></view>
+    <view class="text-box">
+      <view style="font-size: 30rpx;color: #434343;">{{item.useName}}</view>
+      <view>成交次数：{{item.frequency}}</view>
+      <view>船源发布时间：{{item.time}}</view>
+    </view>
+  </view>
+</view>
+<!-- 用户信息 结束 -->
+
+<!-- 船源信息 开始 -->
+
+<view class="box">
+
+  <view class="head-text" style="border-bottom: 1px solid #E6E6E6;">
+    <view class="text-head">船源信息</view>
+    <van-button
+      custom-style="width: 140rpx;height: 58rpx;border: 2rpx solid #E3211F;margin-left:377rpx;font-size: 28rpx;font-weight: bold;color: #E3211F;border-radius: 20px;">
+      关注</van-button>
+
+  </view>
+
+  <view class="information" wx:for="{{ information }}" wx:key="key">
+    <view class="text-left">{{ item.category}}</view>
+    <view class="text-right">{{ item.text }}</view>
+  </view>
+
+
+</view>
+
+
+<!-- 船源信息 结束 -->
+
+<!-- 船家信息 开始 -->
+<view class="box">
+  <view class="head-text">
+    <view style="width: 6rpx;height: 26rpx;background: #E3211F; margin:5px 7px 0 0;">
+      <!-- 红色图标 -->
+    </view>
+
+    <view class="text-head">
+      船家信息
+    </view>
+
+  </view>
+
+  <view class="information" wx:for="{{ information_a }}" wx:key="key">
+    <view class="text-left_a">{{ item.category}}</view>
+    <view class="text-right">{{ item.text }}</view>
+  </view>
+</view>
+
+<!-- 船家信息 结束 -->
+
+<!-- 更多信息 开始 -->
+<view class="box">
+  <view class="head-text">
+    <view class="text-head">
+      更多信息
+    </view>
+
+    <!-- <image src="/images/order/gengduoxx.png" alt=""  style="width:28rpx; height:18rpx;"></image> -->
+
+  </view>
+
+  <view class="information" wx:for="{{ information_a_a }}" wx:key="key">
+    <view class="text-left_a">{{ item.category}}</view>
+    <view class="text-right">{{ item.text }}</view>
+  </view>
+</view>
+<!-- 更多信息 结束 -->
+
+<!-- 船图片 开始 -->
+<view class="box">
+  <view class="head-text">
+    <view style="width: 6rpx;height: 26rpx;background: #E3211F; margin:5px 7px 0 0;">
+      <!-- 红色图标 -->
+    </view>
+
+    <view class="text-head">
+      船图片
+    </view>
+
+  </view>
+
+  <van-grid column-num="3">
+    <van-grid-item icon="photo-o" wx:for="{{ 9 }}" style="width:210rpx; height:210rpx" />
+  </van-grid>
+</view>
+
+<!-- 船图片 结束 -->
+
+<!-- 船视频 开始 -->
+<view class="box">
+  <view class="head-text">
+    <view style="width: 6rpx;height: 26rpx;background: #E3211F; margin:5px 7px 0 0;">
+      <!-- 红色图标 -->
+    </view>
+
+    <view class="text-head">
+      船视频
+    </view>
+  </view>
+
+
+  <view>
+    <image src="/images/order/bf.png" style="width: 64rpx;height: 64rpx; position: absolute;margin: 129rpx 328rpx;">
+    </image>
+    <view style="width: 690rpx;height: 332rpx;margin: 39rpx 25rpx; background:#434343;">
+      <!-- 视频数据 -->
+    </view>
+  </view>
+
+
+</view>
+<!-- 船视频 结束 -->
+
+<!-- 备注 开始 -->
+<view class="box" style="height:60px">
+  <view class="information">
+    <view class="text-left">备注:</view>
+    <view class="text-right_a">12211111111111111111111</view>
+  </view>
+
+</view>
+<!-- 备注 结束 -->
+
+
+<!-- 底部按钮 开始 -->
+<view style=" background:#FFFFFF;">
+  <view class="complaint">
+    <image src="/images/order/ts (1).png" style="width:36rpx; height:36rpx;"></image>
+    <view>投诉</view>
+  </view>
+
+   <view class="btn" style="background:#FF7038" >发起聊天</view>
+   <view class="btn" style="background:#FF3C07">选择船东承运</view>
+</view>
+<!-- 底部按钮 结束 -->
+
+
+<!-- 不同状态  1-->
+<view style=" background:#FFFFFF;">
+  <view class="complaint">
+    <image src="/images/order/ts (1).png" style="width:36rpx; height:36rpx;"></image>
+    <view>投诉</view>
+  </view>
+
+   <view class="btn" style="background:#FF7038; width: 569rpx;" >发起聊天</view>
+</view>
+
+
+<!-- 不同状态  2-->
+<view style=" background:#FFFFFF;">
+
+
+   <view class="btn" style="background:#FF7038; width: 375rpx;" >下架船源</view>
+   <view class="btn" style="background:#FF3C07; width: 375rpx;">修改船源信息</view>
+</view>
+
+
+<!-- 不同状态  3-->
+<view style=" background:#FFFFFF;">
+  <view class="complaint">
+    <image src="/images/order/ts (1).png" style="width:36rpx; height:36rpx;"></image>
+    <view>投诉</view>
+  </view>
+
+   <view class="btn" style="background:#FF7038; width: 569rpx;" >发起聊天</view>
+</view>

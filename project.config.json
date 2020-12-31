@@ -143,6 +143,41 @@
           "pathName": "views/InvoiceAgreement/InvoiceAgreement",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "views/ShippingDate/ShippingDate",
+          "pathName": "views/ShippingDate/ShippingDate",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "views/SelectGoods/SelectGoods",
+          "pathName": "views/SelectGoods/SelectGoods",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "views/DeliveryDate/DeliveryDate",
+          "pathName": "views/DeliveryDate/DeliveryDate",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "views/ShippingDate/ShippingDate",
+          "pathName": "views/ShippingDate/ShippingDate",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "views/ScreenSidebar/ScreenSidebar",
+          "pathName": "views/ScreenSidebar/ScreenSidebar",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "views/CargoDetails/CargoDetails",
+          "pathName": "views/CargoDetails/CargoDetails",
+          "scene": null
         }
       ]
     }

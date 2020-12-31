@@ -47,19 +47,19 @@
           <view class="tabs-btnBox">
          
             <van-button round size="small" 
-            style="margin-right:5px"
+          
             >发起申诉</van-button>
           
             <van-button round size="small" 
-            style="margin-right:5px"
+           
             >查看合同</van-button>
 
             <van-button round size="small" 
-            style="margin-right:5px"
+            
             >发起聊天</van-button>
 
             <van-button round size="small" 
-            style="margin-right:5px"
+            
             >订单轨迹 </van-button>
           
           </view>

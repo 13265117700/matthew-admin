@@ -87,8 +87,15 @@ Page({
     }],
     value1: 0 ,//流程图
     icon:"",
-    isShow:false
+    isShow:false,
+    show:false
 
+  },showPopup() {
+    this.setData({ show: true });
+  },
+
+  onClose() {
+    this.setData({ show: false });
   },
   open:function(){
      this.isShow = !this.isShow;

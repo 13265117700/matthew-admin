@@ -26,7 +26,12 @@
     "views/OrderTrack/OrderTrack",
     "views/OrderTracking/OrderTracking",
     "views/OrderAppeal/OrderAppeal",
-    "views/InvoiceAgreement/InvoiceAgreement"
+    "views/InvoiceAgreement/InvoiceAgreement",
+    "views/ShippingDate/ShippingDate",
+    "views/SelectGoods/SelectGoods",
+    "views/DeliveryDate/DeliveryDate",
+    "views/ScreenSidebar/ScreenSidebar",
+    "views/CargoDetails/CargoDetails"
   ],
   "window": {
     "navigationStyle": "custom",
@@ -88,7 +93,13 @@
     "van-rate": "@vant/weapp/rate/index",
     "van-steps": "@vant/weapp/steps/index",
     "vtu-tab": "/miniprogram_npm/vtuweapp/tab/vtu-tab",
-   "vtu-tabs": "/miniprogram_npm/vtuweapp/tabs/vtu-tabs"
+    "vtu-tabs": "/miniprogram_npm/vtuweapp/tabs/vtu-tabs",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-grid": "@vant/weapp/grid/index",
+    "van-grid-item": "@vant/weapp/grid-item/index",
+    "van-search": "@vant/weapp/search/index",
+    "van-sidebar": "@vant/weapp/sidebar/index",
+    "van-sidebar-item": "@vant/weapp/sidebar-item/index"
   },
   "sitemapLocation": "sitemap.json"
 }

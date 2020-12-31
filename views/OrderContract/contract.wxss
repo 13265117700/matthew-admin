@@ -20,10 +20,32 @@
   margin-right: 48px;
   width: 122px;
 }
+.text-right_a{
+  margin-top: -6rpx;
+  color:#191919;
+  margin-right: 127rpx;
+  font-size: 28rpx;
+}
 
 .text-right {
   position: absolute;
   left: 129px;
+  color:#191919;
+  font-size: 28rpx;
+}
+
+.input-style,.input-style_a{
+width: 407rpx;
+height: 48rpx;
+background: #FFFFFF;
+border: 2px solid #0974E7;
+border-radius: 10rpx;
+margin:6rpx 0;
+padding-left: 12rpx;
+
+}
+.input-style_a{
+border: 2px solid #000000;
 }
 
 .contract-btn {

@@ -1,0 +1,66 @@
+/* views/SelectGoods/SelectGoods.wxss */
+
+.box{
+background: #FFFFFF;
+border-radius: 10px;
+margin: 20rpx 0;
+}
+.box_a{
+  padding: 30rpx 30rpx;
+}
+
+.tabs-time {
+font-size: 28rpx;
+font-weight: 500;
+color: #333333;
+border-bottom: 1px solid #E5E5E5;
+padding-bottom: 29rpx;
+}
+
+.tabs-place {
+  font-size: 14px;
+  color: #191919;
+  margin:17px 0;
+  /* margin-bottom: 15px; */
+}
+
+.tabs-goods {
+  display: flex;
+  /* margin-bottom: 15px; */
+}
+
+.tabs-type {
+  width: 45px;
+  height: 20px;
+  background: #F06622;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-size: 12px;
+  text-align: center;
+  line-height: 18px;
+  margin-right: 0;
+  margin-right: 30rpx;
+}
+
+.tabs-tonnage {
+  font-size: 30rpx;
+  color: #333333;
+  font-weight: 500;
+}
+
+.btns{
+margin-left: 90rpx;
+}
+.btn{
+width: 160rpx;
+height: 60rpx;
+border: 2px solid #F0222F;
+border-radius: 30px;
+color: #F0222F;
+font-size: 27rpx;
+float:right;
+margin: -6px 16rpx;
+line-height: 51rpx;
+font-weight: 550;
+
+}
