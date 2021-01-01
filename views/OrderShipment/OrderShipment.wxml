@@ -13,7 +13,7 @@
 
 <view class="supplement">
  <view>补充说明</view>
- <text>12123</text>
+ <!-- <input type="text" name="firstname" value="Mickey"> -->
 </view> 
 
 <view>
